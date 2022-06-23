@@ -36,7 +36,62 @@ exponentingNum();
 
 //task 29
 
+/* 
+void createArray()
+{
+    int length;
+    Console.WriteLine("Enter an amount of array");
+    length = Convert.ToInt32(Console.ReadLine());
+    
+    int [] array = new int [length]; 
+    int index = 0;
+
+    while (index < length)
+    {
+        array [index] = new Random().Next(1,1000);
+        Console.Write(array [index] + " ");
+        index++;
+    }
+}
+
+
+
+/*
+
+void createArray()
+{
+    int size;
+    Console.WriteLine("Enter an amount of array");
+    size = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int [size];
+
+    for (int i = 0; i < size; i++)
+{
+    array[i] = new Random().Next();
+}
+        for (int i = 0; i < size; i++)
+            {
+                Console.Write(array[i]+ " ");
+            }
+}
+
+createArray();
+*/ 
+
+/*
 int createArray()
 {
+    int size;
+    Console.WriteLine("Enter an amount of array");
+    size = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int [size];
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(1,1000);
+        Console.Write(array[i]+ " ");
+    }
+    return array[size];
     
 }
+createArray(); */
