@@ -30,7 +30,7 @@ double [,] array = createNewArray(x, y);
 //и возвращает значение этого элемента или же указание, что такого элемента нет.
 
 
-
+/*
 int [,] createNewArray (int m, int n)
 {
     int [,] newArray = new int [m,n];
@@ -70,4 +70,43 @@ if (row < x && col <y)
     {
         Console.WriteLine(" the element is not in the boundaries of array");
     }
+*/
 
+//Задача 52. Задайте двумерный массив из целых чисел. 
+//Найдите среднее арифметическое элементов в каждом столбце.
+
+int [,] createNewArray (int m, int n)
+{
+    int [,] newArray = new int [m,n];
+    
+    for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+                {
+                    newArray [i,j] = new Random().Next(1,10);
+                    Console.Write(newArray[i,j]+ " ");
+                }
+                Console.WriteLine();
+        }
+    return newArray;
+}
+void findSumOfCollumn(int [,] array, int row, int col)
+{
+    for (int j = 0; j < col; j++)
+    {
+        int average = 0;
+        for (int i = 0; i < row; i++)
+        {
+            
+            average += array [i,j];
+        }
+        Console.WriteLine($"среднее арифметическое {j + 1} = {average/row}");
+    }
+    
+    
+}
+
+int row = 4;
+int col = 3;
+int [,] array = createNewArray(row,col);
+findSumOfCollumn(array, row, col);
